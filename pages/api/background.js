@@ -1,0 +1,63 @@
+const background = [
+    {
+        eduCards: [
+            {
+                id: 0,
+                title: 'Lovely Professional University',
+                degree: 'MBA IT',
+                detail: "Master's degree in Information Technology from LPU.",
+                year: '2022-2024'
+            },
+            {
+                id: 1,
+                title: 'Chandigarh University',
+                degree: 'B.E. CSE',
+                detail: "Bachelor's degree in Computer Science and Engineering from CU.",
+                year: '2018-2022'
+            },
+            {
+                id: 2,
+                title: 'Blue Star Public Senior Secondary School',
+                degree: 'Non-Medical',
+                detail: "Senior Secondary (12th) from BSP Senior Secondary School.",
+                year: '2017-2018'
+            },
+            {
+                id: 3,
+                title: 'Blue Star Public Senior Secondary School',
+                degree: 'Matriculation',
+                detail: "Secondary (10th) from BSP Senior Secondary School.",
+                year: '2015-2016'
+            }
+        ]
+               
+    },
+    {
+        expCards: [
+            {
+                id: 1,
+                title: 'Hash Softwares',
+                role: 'Laravel/WordPress Developer',
+                url: 'https://www.hashsoftware.com/',
+                desc: 'As a backend developer, I work with PHP, Laravel, and WordPress, while on the frontend, I use React, Next.js, and JavaScript to develop scalable and efficient web applications.',
+                year: '20/03/2023 - Present',
+                location: 'Mohali'
+            },
+            {
+                id: 2,
+                title: 'Solitaire Infosystems Pvt. Ltd.',
+                role: 'PHP Developer',
+                url: 'https://solitaireinfosystems.com/',
+                desc: "As a PHP developer, I gained hands-on experience in building web applications, performing CRUD operations, and integrating Firebase services.",
+                year: '04/04/2022 - 28/02/2023',
+                location: 'Mohali'
+            }
+        ]
+        
+    }
+]
+
+
+export default function handler(req, res) {
+    res.status(200).json(background)
+}
