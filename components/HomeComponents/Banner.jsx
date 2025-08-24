@@ -19,8 +19,8 @@ const Banner = () => {
                                             <Typewriter
                                                 options={{
                                                     strings: [
-                                                        'Laravel Developer',
-                                                        'ReactJS/NextJS Developer'
+                                                        'Full-Stack Developer',
+                                                        'Full-Stack Developer'
                                                     ],
                                                     autoStart: true,
                                                     loop: true,
@@ -53,7 +53,12 @@ const Banner = () => {
 
                     <div className="flex items-center gap-x-1">
                         <span className='text-base md:text-lg text-Green font-bold'>2+</span>
-                        <span className='text-xs text-Snow'>Next Js Projects</span>
+                        <span className='text-xs text-Snow'>Next JS Projects</span>
+                    </div>
+
+                    <div className="flex items-center gap-x-1">
+                        <span className='text-base md:text-lg text-Green font-bold'>2+</span>
+                        <span className='text-xs text-Snow'>Node JS Projects</span>
                     </div>
 
                     {/* <div className="flex items-center gap-x-1">

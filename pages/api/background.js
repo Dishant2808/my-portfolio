@@ -36,13 +36,13 @@ const background = [
         expCards: [
             {
                 id: 1,
-                title: 'Hash Softwares',
-                role: 'Laravel/WordPress Developer',
+                title: 'Hash Software',
+                role: 'Full-Stack Developer',
                 url: 'https://www.hashsoftware.com/',
-                desc: 'As a backend developer, I work with PHP, Laravel, and WordPress, while on the frontend, I use React, Next.js, and JavaScript to develop scalable and efficient web applications.',
+                desc: 'As a Full-Stack Developer, I build robust and scalable web applications using PHP, Laravel, WordPress, and Node.js on the backend, and React and Next.js on the frontend. I focus on creating efficient, maintainable, and high-performance solutions.',
                 year: '20/03/2023 - Present',
                 location: 'Mohali'
-            },
+            },                       
             {
                 id: 2,
                 title: 'Solitaire Infosystems Pvt. Ltd.',
