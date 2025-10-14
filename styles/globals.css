@@ -15,13 +15,41 @@ body {
       @apply transition-all delay-200 !duration-1000;
     }
     .card_stylings {
-      @apply bg-EveningBlack/95 rounded-xl hover:bg-gradient-to-br hover:from-Green/10 hover:to-indigo-600/5;
+      @apply bg-white rounded-xl border border-DarkGray/60 shadow-sm hover:shadow-md;
+    }
+    .pro-card {
+      @apply relative rounded-2xl p-[1px] overflow-hidden;
+      background: linear-gradient(135deg, rgba(59,130,246,0.35), rgba(139,92,246,0.35));
+    }
+    .pro-card-inner {
+      @apply bg-white rounded-2xl h-full w-full; 
+    }
+    .elevated-card {
+      @apply bg-white rounded-2xl border border-DarkGray/50 shadow-md hover:shadow-lg transition;
+    }
+    .pill {
+      @apply inline-flex items-center rounded-full bg-MidNightBlack text-SilverGray text-[10px] uppercase tracking-widest px-3 py-1 border border-DarkGray/60;
+    }
+    .cta-primary {
+      @apply inline-flex items-center justify-center rounded-xl bg-ElectricBlue text-white px-5 py-2 text-sm font-medium hover:opacity-90 transition;
+    }
+    .cta-secondary {
+      @apply inline-flex items-center justify-center rounded-xl bg-white text-SilverGray px-5 py-2 text-sm font-medium border border-DarkGray/60 hover:bg-MidNightBlack/50 transition;
+    }
+    .stat {
+      @apply flex flex-col items-start p-4 rounded-xl border border-DarkGray/60 bg-white;
+    }
+    .section-title {
+      @apply text-Snow text-lg font-semibold mb-2 tracking-wide;
+    }
+    .section-subtext {
+      @apply text-SilverGray text-sm leading-6;
     }
     .button {
-      @apply bg-Green hover:bg-Green/60 transition rounded-xl text-MidNightBlack text-base font-medium  px-8 py-2;
+      @apply bg-Green hover:bg-Green/80 transition rounded-xl text-white text-base font-medium  px-8 py-2;
     }
     .input_stylings {
-      @apply bg-DeepNightBlack text-SilverGray text-sm rounded-lg outline-none focus:ring-1 focus:ring-Green block w-full pl-10 p-2.5;
+      @apply bg-white text-SilverGray text-sm rounded-lg outline-none focus:ring-1 focus:ring-Green border border-DarkGray/60 block w-full pl-10 p-2.5;
     }
 
     @font-face {

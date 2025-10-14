@@ -13,19 +13,19 @@ const Nav = ({ setIsOpen, isOpen }) => {
     const router = useRouter();
 
     const linkBase = "px-3 py-1.5 text-xs tracking-widest uppercase transition rounded-md";
-    const getActive = (path) => router.asPath === path ? "text-ElectricBlue" : "text-SilverGray hover:text-Snow";
+    const getActive = (path) => router.pathname === path ? "text-ElectricBlue font-semibold" : "text-SilverGray hover:text-Black";
 
     return (
         <>
             {/* Top navbar (desktop) */}
             <div className="hidden lg:block fixed top-0 left-0 right-0 z-50">
                 <nav className="h-14 bg-DeepNightBlack border-b border-DarkGray flex items-center justify-center gap-4">
-                    <Link href="/" className={`${linkBase} text-SilverGray hover:text-Snow`}>Online Portfolio</Link>
-                    <Link href="/background" className={`${linkBase} ${getActive('/background')}`}>About Me</Link>
-                    <Link href="/background" className={`${linkBase} ${getActive('/background')}`}>Education</Link>
-                    <Link href="/background" className={`${linkBase} ${getActive('/background')}`}>Experience</Link>
+                    <Link href="/" className={`${linkBase} ${getActive('/')}`}>Home</Link>
+                    <Link href="/about" className={`${linkBase} ${getActive('/about')}`}>About Me</Link>
+                    <Link href="/education" className={`${linkBase} ${getActive('/education')}`}>Education</Link>
+                    <Link href="/experience" className={`${linkBase} ${getActive('/experience')}`}>Experience</Link>
                     <Link href="/portfolio" className={`${linkBase} ${getActive('/portfolio')}`}>Project</Link>
-                    <Link href="/contact" className={`${linkBase} text-ElectricBlue`}>Contact</Link>
+                    <Link href="/contact" className={`${linkBase} ${getActive('/contact')}`}>Contact</Link>
                 </nav>
             </div>
 
@@ -39,6 +39,8 @@ const Nav = ({ setIsOpen, isOpen }) => {
                         <NavItem setIsOpen={setIsOpen} NavRoute={'/'} NavIcon={<ImHome />} NavText={'Home'} />
                         <NavItem setIsOpen={setIsOpen} NavRoute={'/contact'} NavIcon={<FaHandshake />} NavText={'Contact'} />
                         <NavItem setIsOpen={setIsOpen} NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
+                        <NavItem setIsOpen={setIsOpen} NavRoute={'/education'} NavIcon={<HiIdentification />} NavText={'Education'} />
+                        <NavItem setIsOpen={setIsOpen} NavRoute={'/experience'} NavIcon={<MdWork />} NavText={'Experience'} />
                         <NavItem setIsOpen={setIsOpen} NavRoute={'/portfolio'} NavIcon={<MdWork />} NavText={'Projects'} />
                     </div>
                 </div>
