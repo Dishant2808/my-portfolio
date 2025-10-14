@@ -8,15 +8,15 @@ import Link from 'next/link';
 
 const home = () => {
     const stats = [
-        { number: "4+", label: "Years Experience", color: "text-Green" },
+        { number: "4", label: "Years Experience", color: "text-Green" },
         { number: "20+", label: "Projects Delivered", color: "text-ElectricBlue" },
-        { number: "10+", label: "Technologies", color: "text-NeonPurple" },
+        { number: "5+", label: "Technologies", color: "text-NeonPurple" },
         { number: "100%", label: "Client Satisfaction", color: "text-Green" }
     ];
 
     const quickLinks = [
         { title: "About Me", description: "Learn about my journey", link: "/about", icon: "👨‍💻" },
-        { title: "My Work", description: "View my portfolio", link: "/portfolio", icon: "💼" },
+        { title: "My Work", description: "View my projects", link: "/projects", icon: "💼" },
         { title: "Experience", description: "Professional background", link: "/experience", icon: "🚀" },
         { title: "Contact", description: "Get in touch", link: "/contact", icon: "📧" }
     ];
@@ -173,13 +173,13 @@ const home = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </a>
-                            <a href="/portfolio" className="cta-secondary inline-flex items-center gap-2 group">
+                            {/* <a href="/portfolio" className="cta-secondary inline-flex items-center gap-2 group">
                                 <span>View Portfolio</span>
                                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                                 </svg>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

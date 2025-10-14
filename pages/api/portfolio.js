@@ -5,17 +5,12 @@ const portfolio = [
         url: "https://app.classescrm.com",
         image: "projects/classes/2.png",
         images: ["projects/classes/1.png", "projects/classes/2.png", "projects/classes/3.png" , "projects/classes/4.png" , "projects/classes/5.png"],
-        projectDetail: "Restructure your business with JMM ERP’s all-in-one cloud-based ERP. JMM ERP provides a robust, cost-effective online solution with state-of-the-art software to increase business value and enhance customer impact.",
+        projectDetail: "CRM Platform that enables businesses (e.g., Coaching centers, Gym, Classes, Events) to manage sessions, booking, and client interactions based on locations. The platform provides real-time booking.",
         technologiesUsed: [
             {
                 Frontend: "NextJS"
-            },
-            {
-                Backend: "Laravel"
-            },
-            {
-                DB: "MySQL"
-            },
+            }
+    
         ]
     },
     {
@@ -24,7 +19,7 @@ const portfolio = [
         url: "https://background-spain-adminapp.vercel.app",
         image: "projects/bgspain/2.png",
         images: ["projects/bgspain/1.png", "projects/bgspain/2.png", "projects/bgspain/3.png" , "projects/bgspain/4.png" , "projects/bgspain/5.png"],
-        projectDetail: "Restructure your business with JMM ERP’s all-in-one cloud-based ERP. JMM ERP provides a robust, cost-effective online solution with state-of-the-art software to increase business value and enhance customer impact.",
+        projectDetail: "Employee Background Verification Platform provides businesses with automated tools to verify the employment history, educational qualifications, criminal records, and other background details of job applicants and employees.",
         technologiesUsed: [
             {
                 Frontend: "ReactJS & Laravel"
@@ -41,16 +36,16 @@ const portfolio = [
         technologiesUsed: [
             {
                 Frontend: "Laravel"
-            },
+            }
         ]
     },
     {
         id: 0,
         projectName: "Rue Four",
         url: "https://app.classescrm.com",
-        image: "projects/ruefour/1.png",
-        images: ["projects/ruefour/1.png", "projects/ruefour/2.png", "projects/ruefour/3.png" , "projects/ruefour/4.png" , "projects/ruefour/5.png"],
-        projectDetail: "Restructure your business with JMM ERP’s all-in-one cloud-based ERP. JMM ERP provides a robust, cost-effective online solution with state-of-the-art software to increase business value and enhance customer impact.",
+        image: "projects/rue-four/1.jpg",
+        images: ["projects/rue-four/1.jpg", "projects/rue-four/2.jpg", "projects/rue-four/3.jpg" , "projects/rue-four/4.jpg" , "projects/rue-four/5.jpg"],
+        projectDetail: "E-commerce platform that connects clinicians and patients with healthcare, skincare, and wellness products from multiple brands. The platform streamlines product management, order fulfillment, and personalized recommendations for patients.",
         technologiesUsed: [
             {
                 Frontend: "NextJS & Laravel"

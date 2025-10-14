@@ -77,7 +77,7 @@ export default function About() {
                             {/* Stats */}
                             <div className="grid grid-cols-1 gap-4 w-full lg:w-auto">
                                 <div className="stat group hover:shadow-lg transition-all duration-300">
-                                    <div className="text-3xl font-bold text-Green mb-1">4+</div>
+                                    <div className="text-3xl font-bold text-Green mb-1">4</div>
                                     <div className="text-SilverGray text-sm font-medium">Years Experience</div>
                                 </div>
                                 <div className="stat group hover:shadow-lg transition-all duration-300">

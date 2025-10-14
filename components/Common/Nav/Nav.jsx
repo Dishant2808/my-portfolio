@@ -24,7 +24,7 @@ const Nav = ({ setIsOpen, isOpen }) => {
                     <Link href="/about" className={`${linkBase} ${getActive('/about')}`}>About Me</Link>
                     <Link href="/education" className={`${linkBase} ${getActive('/education')}`}>Education</Link>
                     <Link href="/experience" className={`${linkBase} ${getActive('/experience')}`}>Experience</Link>
-                    <Link href="/portfolio" className={`${linkBase} ${getActive('/portfolio')}`}>Project</Link>
+                    <Link href="/projects" className={`${linkBase} ${getActive('/projects')}`}>Project</Link>
                     <Link href="/contact" className={`${linkBase} ${getActive('/contact')}`}>Contact</Link>
                 </nav>
             </div>
@@ -41,7 +41,7 @@ const Nav = ({ setIsOpen, isOpen }) => {
                         <NavItem setIsOpen={setIsOpen} NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
                         <NavItem setIsOpen={setIsOpen} NavRoute={'/education'} NavIcon={<HiIdentification />} NavText={'Education'} />
                         <NavItem setIsOpen={setIsOpen} NavRoute={'/experience'} NavIcon={<MdWork />} NavText={'Experience'} />
-                        <NavItem setIsOpen={setIsOpen} NavRoute={'/portfolio'} NavIcon={<MdWork />} NavText={'Projects'} />
+                        <NavItem setIsOpen={setIsOpen} NavRoute={'/projects'} NavIcon={<MdWork />} NavText={'Projects'} />
                     </div>
                 </div>
             </DrawerLayout>
