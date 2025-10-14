@@ -1,10 +1,7 @@
 import { useState } from 'react';
 import BannerLayout from '../components/Common/BannerLayout';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { SiUpwork } from 'react-icons/si'
-import { HiMail, HiUser } from 'react-icons/hi'
-import { BsChatTextFill } from 'react-icons/bs'
-import Fiverr_Icon from '../components/Fiverr_Icon';
+import { FaGithub, FaLinkedin, FaTwitter, FaPhone, FaMapMarkerAlt, FaHeart } from 'react-icons/fa'
+import { HiMail } from 'react-icons/hi'
 import Footer from '../components/Footer';
 import { Modal } from 'antd';
 
@@ -13,74 +10,97 @@ const Contact = () => {
 
     return (
         <BannerLayout>
-            <div className=" px-4 py-2">
-                <div className="my-6 text-Snow flex flex-col gap-y-5">
-                    <h1 className='text-lg font-bold'>Contact Information</h1>
-                    <div className="flex flex-col md:flex-row items-center gap-5 text-xs">
-                        <div className="card_stylings w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
-                            <div className="flex justify-between items-center">
-                                <span className='md:text-base'>Country:</span>
-                                <span className='text-LightGray md:text-sm'>India</span>
-                            </div>
-                            <div className="flex justify-between items-center">
-                                <span className='md:text-base'>City:</span>
-                                <span className='text-LightGray md:text-sm'>Mohali</span>
-                            </div>
-                            <div className="flex justify-between items-center">
-                                <span className='md:text-base'>Company:</span>
-                                <span className='text-LightGray md:text-sm'>Hash Software</span>
-                            </div>
-                        </div>
-                        <div className="card_stylings rounded-xl w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
-                            <div className="flex justify-between items-center">
-                                <span className='md:text-base'>Email:</span>
-                                <span className='text-LightGray text-sm'>dishantthakur8282@gmail.com</span>
-                            </div>
-                            <div className="flex justify-between items-center">
-                                <span className='md:text-base'>Linkedin:</span>
-                                <span className='text-LightGray text-sm'>Dishant Thakur</span>
-                            </div>
-                            <div className="flex justify-between items-center">
-                                <span className='md:text-base'>Phone:</span>
-                                <span className='text-LightGray text-sm'>+91 86289 24100</span>
-                            </div>
-                        </div>
+            <div className="relative min-h-screen px-4 py-8">
+                {/* Background with texture and gradient effects */}
+                <div className="absolute inset-0 bg-gradient-to-br from-Green/5 via-transparent to-ElectricBlue/5 opacity-50"></div>
+                <div className="absolute inset-0 opacity-30" style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231fdf64' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+                }}></div>
+                
+                <div className="relative z-10">
+                    {/* Header Section */}
+                    <div className="text-center mb-16">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-Snow mb-4 tracking-wide">
+                            GET IN TOUCH
+                        </h1>
+                        <p className="text-Green text-lg md:text-xl font-medium">
+                            Let's Work Together
+                        </p>
                     </div>
-                </div>
 
-                <div className="my-12 w-full h-auto text-Snow">
-                    <h1 className='text-lg font-bold'>Get In Touch</h1>
-                    <div className="mt-4 py-8 px-8 bg-EveningBlack rounded-xl text-sm">
-                        <div>
-                            <div className="flex flex-col w-full">
-                                <div className="userIcon relative mb-6">
-                                    <div id="icon" className="absolute inset-y-0 left-0 flex items-center pl-3 text-xl pointer-events-none">
-                                        <HiUser />
-                                    </div>
-                                    <input type="text" className="input_stylings" placeholder="Name" />
+                    {/* Contact Information Cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                        {/* Phone & Mobile Card */}
+                        <div className="bg-EveningBlack/80 backdrop-blur-sm rounded-2xl p-6 border border-Green/20 hover:border-Green/40 transition-all duration-300 hover:shadow-lg hover:shadow-Green/10">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-16 h-16 rounded-full bg-Green/10 flex items-center justify-center mb-4 border-2 border-Green/30">
+                                    <FaPhone className="text-2xl text-Green" />
+                                </div>
+                                <h3 className="text-Snow font-bold text-lg mb-3">Phone & Mobile</h3>
+                                <div className="space-y-1">
+                                    <p className="text-LightGray text-sm">+91 86289 24100</p>
+                                    <p className="text-LightGray text-sm">+91 85447 31330</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div className="flex flex-col w-full">
-                                <div className="mailIcon relative mb-6">
-                                    <div id="icon" className="absolute inset-y-0 left-0 flex items-center text-xl pl-3 pointer-events-none">
-                                        <HiMail />
-                                    </div>
-                                    <input type="text" className="input_stylings" placeholder="Email" />
+                        {/* Email & Website Card */}
+                        <div className="bg-EveningBlack/80 backdrop-blur-sm rounded-2xl p-6 border border-Green/20 hover:border-Green/40 transition-all duration-300 hover:shadow-lg hover:shadow-Green/10">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-16 h-16 rounded-full bg-Green/10 flex items-center justify-center mb-4 border-2 border-Green/30">
+                                    <HiMail className="text-2xl text-Green" />
+                                </div>
+                                <h3 className="text-Snow font-bold text-lg mb-3">Email</h3>
+                                <div className="space-y-1">
+                                    <p className="text-LightGray text-sm">dishantthakur8282@gmail.com</p>
+                                    {/* <p className="text-LightGray text-sm">dishantthakur.com</p> */}
                                 </div>
                             </div>
+                        </div>
 
-                            <div className="flex flex-col w-full">
-                                <div className="textIcon relative mb-6">
-                                    <div id="icon" className="absolute top-3 left-0 flex items-center text-lg pl-3 pointer-events-none">
-                                        <BsChatTextFill />
-                                    </div>
-                                    <textarea rows={6} cols={50} className="input_stylings" placeholder="Message" />
+                        {/* Address Card */}
+                        <div className="bg-EveningBlack/80 backdrop-blur-sm rounded-2xl p-6 border border-Green/20 hover:border-Green/40 transition-all duration-300 hover:shadow-lg hover:shadow-Green/10">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-16 h-16 rounded-full bg-Green/10 flex items-center justify-center mb-4 border-2 border-Green/30">
+                                    <FaMapMarkerAlt className="text-2xl text-Green" />
+                                </div>
+                                <h3 className="text-Snow font-bold text-lg mb-3">Address</h3>
+                                <div className="space-y-1">
+                                    <p className="text-LightGray text-sm">Mohali, Punjab</p>
+                                    <p className="text-LightGray text-sm">India</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div className="my-4">
-                                <button onClick={() => setIsOpen(true)} className="button"> SEND MESSAGE </button>
+                        {/* Social Media Card */}
+                        <div className="bg-EveningBlack/80 backdrop-blur-sm rounded-2xl p-6 border border-Green/20 hover:border-Green/40 transition-all duration-300 hover:shadow-lg hover:shadow-Green/10">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-16 h-16 rounded-full bg-Green/10 flex items-center justify-center mb-4 border-2 border-Green/30">
+                                    <FaHeart className="text-2xl text-Green" />
+                                </div>
+                                <h3 className="text-Snow font-bold text-lg mb-3">Social Media</h3>
+                                <div className="space-y-1">
+                                    <p className="text-LightGray text-sm">@dishantthakur</p>
+                                    <div className="flex justify-center space-x-3 mt-2">
+                                        <a 
+                                            href="https://www.linkedin.com/in/dishant-thakur-43609b200" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="text-Green hover:text-Green/70 transition-colors cursor-pointer"
+                                        >
+                                            <FaLinkedin className="text-2xl" />
+                                        </a>
+                                        <a 
+                                            href="https://github.com/Dishant2808/" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="text-Green hover:text-Green/70 transition-colors cursor-pointer"
+                                        >
+                                            <FaGithub className="text-2xl" />
+                                        </a>
+                                        {/* <FaTwitter className="text-Green hover:text-Green/70 transition-colors cursor-pointer" /> */}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
