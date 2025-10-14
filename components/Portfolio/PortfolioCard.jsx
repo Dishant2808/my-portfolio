@@ -1,29 +1,49 @@
 import Badge from "../Common/Badge"
-import { Carousel } from "antd"
+import { Carousel, Image } from "antd"
+import { useState } from "react"
 
 const PortfolioCard = ({ data }) => {
+    const [previewOpen, setPreviewOpen] = useState(false)
+    const images = Array.isArray(data?.images) && data?.images.length > 0 ? data.images : [data?.image]
+
     return (
         <div className="card_stylings overflow-hidden h-full">
-            {Array.isArray(data?.images) && data?.images?.length > 1 ? (
-                <Carousel autoplay dots className="w-full">
-                    {data.images.map((imgSrc, idx) => (
-                        <div key={idx}>
+            {/* Gallery */}
+            <div className="relative">
+                <Carousel arrows dots autoplay autoplaySpeed={2500} pauseOnHover={false} effect="fade" className="w-full">
+                    {images.map((imgSrc, idx) => (
+                        <div key={idx} className="cursor-pointer" onClick={() => setPreviewOpen(true)}>
                             <img
                                 src={imgSrc}
                                 alt={`portfolio img ${idx + 1}`}
-                                className="w-full object-cover opacity-30 h-32 sm:h-48 md:h-64"
+                                className="w-full object-cover h-32 sm:h-48 md:h-64"
                             />
                         </div>
                     ))}
                 </Carousel>
-            ) : (
-                <img
-                    src={data?.images?.[0] || data?.image}
-                    alt="portfolio img"
-                    className="w-full object-cover opacity-30 h-32 sm:h-48 md:h-64"
-                />
-            )}
-            <div id="arrow" className="py-2 px-6 card_stylings hover:-translate-y-10 transition-all ease-in-out duration-500">
+
+                {/* Thumbnails */}
+                {images.length > 1 && (
+                    <div className="flex gap-2 p-3 overflow-x-auto bg-white/70">
+                        {images.map((thumb, i) => (
+                            <img key={i} src={thumb} alt={`thumb-${i}`} className="h-12 w-16 object-cover rounded-md border border-DarkGray/40" />
+                        ))}
+                    </div>
+                )}
+
+                {/* Lightbox Preview */}
+                <div className="hidden">
+                    <Image.PreviewGroup
+                        preview={{ visible: previewOpen, onVisibleChange: (vis) => setPreviewOpen(vis) }}
+                    >
+                        {images.map((src, i) => (
+                            <Image key={i} src={src} alt={`full-${i}`} />
+                        ))}
+                    </Image.PreviewGroup>
+                </div>
+            </div>
+
+            <div id="arrow" className="py-2 px-6 card_stylings hover:-translate-y-2 transition-all ease-in-out duration-300">
                 <div className="flex justify-between p-0 m-0 ">
                     <h3 className="mr-2 underline italic font-semibold pt-2 text-2xl text-Snow leading-tight sm:leading-normal">
                         <a

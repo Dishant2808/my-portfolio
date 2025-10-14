@@ -23,7 +23,7 @@ const Portfolio = () => {
                     </p>
                 </div>
             </div>
-            <div className="grid justify items-center grid-flow-row md:grid-cols-2 grid-rows-auto gap-4 px-6 sm:px-8 pb-10">
+            <div className="grid justify items-center grid-flow-row sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-4 px-6 sm:px-8 pb-10">
 
                 {
                     isLoading ?
