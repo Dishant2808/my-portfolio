@@ -1,13 +1,28 @@
 import Badge from "../Common/Badge"
+import { Carousel } from "antd"
 
 const PortfolioCard = ({ data }) => {
     return (
         <div className="card_stylings overflow-hidden h-full">
-            <img
-                src={data?.image}
-                alt="portfolio img"
-                className="w-full object-cover opacity-30 h-32 sm:h-48 md:h-64"
-            />
+            {Array.isArray(data?.images) && data?.images?.length > 1 ? (
+                <Carousel autoplay dots className="w-full">
+                    {data.images.map((imgSrc, idx) => (
+                        <div key={idx}>
+                            <img
+                                src={imgSrc}
+                                alt={`portfolio img ${idx + 1}`}
+                                className="w-full object-cover opacity-30 h-32 sm:h-48 md:h-64"
+                            />
+                        </div>
+                    ))}
+                </Carousel>
+            ) : (
+                <img
+                    src={data?.images?.[0] || data?.image}
+                    alt="portfolio img"
+                    className="w-full object-cover opacity-30 h-32 sm:h-48 md:h-64"
+                />
+            )}
             <div id="arrow" className="py-2 px-6 card_stylings hover:-translate-y-10 transition-all ease-in-out duration-500">
                 <div className="flex justify-between p-0 m-0 ">
                     <h3 className="mr-2 underline italic font-semibold pt-2 text-2xl text-Snow leading-tight sm:leading-normal">
@@ -47,6 +62,11 @@ const PortfolioCard = ({ data }) => {
                 <p className="text-xs text-LightGray font-normal">
                     {data?.projectDetail}
                 </p>
+                {Array.isArray(data?.languages) && data.languages.length > 0 && (
+                    <div className="text-sm flex flex-wrap gap-3 py-2">
+                        {data.languages.map((lang, key) => <Badge key={key} title={lang} />)}
+                    </div>
+                )}
                 <div className="text-sm flex flex-wrap gap-3 py-2">
                     {data.technologiesUsed.map((index, key) => <Badge key={key} title={index.tech} />)}
                 </div>

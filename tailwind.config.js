@@ -8,15 +8,18 @@ module.exports = {
     extend: {
       colors: {
         Green: "#1fdf64",
-        Black: "#000",
-        DeepNightBlack: "#121212",
-        MidNightBlack: "#181818",
-        EveningBlack: "#1a1a1a",
-        DarkGray: "#282828",
-        SlateGray: "#404040",
-        LightGray: "#959595",
-        SilverGray: "#B3B3B3",
-        Snow: "#ffffff",
+        ElectricBlue: "#3b82f6",
+        NeonPurple: "#8b5cf6",
+        Black: "#000000",
+        // Light theme remap
+        DeepNightBlack: "#ffffff", // main surface
+        MidNightBlack: "#f5f5f5",  // subtle section bg
+        EveningBlack: "#fafafa",   // card bg
+        DarkGray: "#e5e7eb",       // borders/dividers
+        SlateGray: "#cbd5e1",      // muted borders
+        LightGray: "#6b7280",      // secondary text
+        SilverGray: "#374151",     // primary dark text on white
+        Snow: "#111827",           // titles (previously white)
       },
       fontFamily: {
         'cascadia-normal': ['cascadia-normal'],

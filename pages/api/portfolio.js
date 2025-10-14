@@ -4,6 +4,8 @@ const portfolio = [
         projectName: "JMM ERP",
         url: "https://jmmerp.com/",
         image: "projects/erp.png",
+        images: ["projects/erp.png"],
+        languages: ["English", "Arabic"],
         projectDetail: "Restructure your business with JMM ERP’s all-in-one cloud-based ERP. JMM ERP provides a robust, cost-effective online solution with state-of-the-art software to increase business value and enhance customer impact.",
         technologiesUsed: [
             {
@@ -28,6 +30,8 @@ const portfolio = [
         projectName: "ABSCO",
         url: "https://absco.sa/",
         image: "projects/absco.png",
+        images: ["projects/absco.png"],
+        languages: ["English", "Arabic"],
         projectDetail: "ABSCO offer unparalleled business consulting solutions to meet client’s unique needs.",
         technologiesUsed: [
             {
@@ -46,6 +50,8 @@ const portfolio = [
         projectName: "JMM Technologies",
         url: "https://jmm.ltd/",
         image: "projects/jmm.png",
+        images: ["projects/jmm.png"],
+        languages: ["English"],
         projectDetail: "JMM Technologies is a start-up turned technology company with extensive years of experience delivering digital solutions. As a fast-growing tech firm, we help diverse businesses and organizations. Our expertise in innovative, state-of-the-art digital services accelerates business growth and enhances customer impact.",
         technologiesUsed: [
             {
@@ -70,6 +76,8 @@ const portfolio = [
         projectName: "ALSN",
         url: "https://alsn.app/",
         image: "projects/alsn.png",
+        images: ["projects/alsn.png"],
+        languages: ["English", "Arabic"],
         projectDetail: "ASLN drives digital transformation with certified document translation services. In an interconnected world where seamless communication is imperative, they are strategically positioned to cater to the needs of businesses, individuals, and organizations.",
         technologiesUsed: [
             {
@@ -94,6 +102,8 @@ const portfolio = [
         projectName: "FirmSanad",
         url: "/domain-expired",
         image: "projects/firmsanad.png",
+        images: ["projects/firmsanad.png"],
+        languages: ["English", "Arabic"],
         projectDetail: "Invest in Saudi Arabia, Streamline Your Business Setup Process in Saudi Arabia with FirmSanad Simplify the process of obtaining licenses and starting a business in Saudi Arabia with our streamlined platform.",
         technologiesUsed: [
             {
@@ -118,6 +128,8 @@ const portfolio = [
         projectName: "Fateh Al Mustaqbil",
         url: "https://fatehtour.com/",
         image: "projects/fateh.png",
+        images: ["projects/fateh.png"],
+        languages: ["English", "Arabic"],
         projectDetail: "Fateh Al Mustaqbil is a one-of-a-kind travel agency designed to cater to the interests of travelers across the globe, founded in 2023 in Riyadh, Saudi Arabia. Their expertise lies in crafting exceptional journeys tailored to each client's unique requirements, whether it be ticketing, hotel bookings, or visa assistance.",
         technologiesUsed: [
             {
@@ -142,6 +154,8 @@ const portfolio = [
         projectName: "Tojjar",
         url: "/domain-expired",
         image: "projects/tojjar.png",
+        images: ["projects/tojjar.png"],
+        languages: ["English", "Arabic"],
         projectDetail: "Tojjar is ecommerce website,  where you can open your own store and sell products of different brands!",
         technologiesUsed: [
             {
@@ -166,6 +180,8 @@ const portfolio = [
         projectName: "Otawix",
         url: "https://b2c.otawix.com/",
         image: "projects/otawix.png",
+        images: ["projects/otawix.png"],
+        languages: ["English", "Arabic"],
         projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
         technologiesUsed: [
             {
@@ -190,6 +206,8 @@ const portfolio = [
         projectName: "Spatay",
         url: "https://spatay.com/",
         image: "projects/spatay.png",
+        images: ["projects/spatay.png"],
+        languages: ["English"],
         projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
         technologiesUsed: [
             {

@@ -3,12 +3,10 @@
 @tailwind utilities;
 
 body {
-    /* transition: all; */
-    background-color: #000  !important;
-    /* padding: 0.8rem; */
-    /* transition: width 5s ease-in .2s; */
+    background-color: #ffffff !important;
     overflow: hidden;
     height: 100vh;
+    background-image: none;
 }
 
 @layer utilities {
