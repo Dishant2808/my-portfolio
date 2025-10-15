@@ -28,29 +28,29 @@ const Nav = () => {
 
             {/* Bottom navbar (mobile) */}
             <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50">
-                <nav className="h-14 bg-DeepNightBlack border-t border-DarkGray flex items-center justify-between px-4">
-                    <Link href="/" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/')}`}>
-                        <span className="text-base"><ImHome /></span>
+                <nav className="h-16 bg-DeepNightBlack border-t border-DarkGray flex items-stretch justify-stretch px-0">
+                    <Link href="/" className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-1.5 text-[12px] ${getActive('/')}`}>
+                        <span className="text-xl"><ImHome /></span>
                         <span>Home</span>
                     </Link>
-                    <Link href="/about" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/about')}`}>
-                        <span className="text-base"><HiIdentification /></span>
+                    <Link href="/about" className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-1.5 text-[12px] ${getActive('/about')}`}>
+                        <span className="text-xl"><HiIdentification /></span>
                         <span>About</span>
                     </Link>
-                    <Link href="/education" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/education')}`}>
-                        <span className="text-base"><HiIdentification /></span>
+                    <Link href="/education" className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-1.5 text-[12px] ${getActive('/education')}`}>
+                        <span className="text-xl"><HiIdentification /></span>
                         <span>Education</span>
                     </Link>
-                    <Link href="/experience" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/experience')}`}>
-                        <span className="text-base"><MdWork /></span>
+                    <Link href="/experience" className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-1.5 text-[12px] ${getActive('/experience')}`}>
+                        <span className="text-xl"><MdWork /></span>
                         <span>Experience</span>
                     </Link>
-                    <Link href="/projects" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/projects')}`}>
-                        <span className="text-base"><MdWork /></span>
+                    <Link href="/projects" className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-1.5 text-[12px] ${getActive('/projects')}`}>
+                        <span className="text-xl"><MdWork /></span>
                         <span>Projects</span>
                     </Link>
-                    <Link href="/contact" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/contact')}`}>
-                        <span className="text-base"><FaHandshake /></span>
+                    <Link href="/contact" className={`flex-1 flex flex-col items-center justify-center gap-0.5 py-1.5 text-[12px] ${getActive('/contact')}`}>
+                        <span className="text-xl"><FaHandshake /></span>
                         <span>Contact</span>
                     </Link>
                 </nav>
