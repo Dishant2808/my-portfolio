@@ -24,7 +24,7 @@ const home = () => {
     return (
         <div className="Home-Page -z-10">
             {/* Hero Section */}
-            <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden">
                 {/* Background Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-Green/10 via-ElectricBlue/10 to-NeonPurple/10"></div>
                 
@@ -35,7 +35,7 @@ const home = () => {
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-NeonPurple/5 rounded-full blur-3xl animate-pulse delay-2000"></div>
                 </div>
 
-                <div className="relative z-10 container mx-auto px-4 sm:px-8">
+                <div className="relative z-10 container mx-auto px-4 sm:px-6">
                     <div className="text-center">
                         {/* Profile Image */}
                         <div className="relative inline-block mb-8 group">
@@ -49,7 +49,7 @@ const home = () => {
                         </div>
 
                         {/* Main Heading */}
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-Snow mb-6 font-circular-bold">
+                        <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold text-Snow mb-4 md:mb-6 font-circular-bold">
                             Hello, I'm{' '}
                             <span className="bg-gradient-to-r from-Green via-ElectricBlue to-NeonPurple bg-clip-text text-transparent">
                                 Dishant
@@ -57,20 +57,20 @@ const home = () => {
                         </h1>
 
                         {/* Subtitle */}
-                        <div className="text-xl md:text-2xl lg:text-3xl text-LightGray mb-8 font-circular-normal">
+                        <div className="text-lg md:text-2xl lg:text-3xl text-LightGray mb-6 md:mb-8 font-circular-normal">
                             <span className="inline-block mr-2">I'm a</span>
                             <span className="text-Green font-bold">Full-Stack Developer</span>
                             <span className="inline-block ml-2">building amazing digital experiences</span>
                         </div>
 
                         {/* Description */}
-                        <p className="text-base md:text-lg text-SilverGray max-w-3xl mx-auto mb-12 leading-relaxed font-circular-normal">
+                        <p className="text-sm md:text-lg text-SilverGray max-w-3xl mx-auto mb-8 md:mb-12 leading-relaxed font-circular-normal">
                             I craft exceptional web applications with clean code, modern technologies, and user-centric design. 
                             Let's turn your ideas into reality with scalable, performant solutions.
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-10 md:mb-16">
                             <Link 
                                 href="projects" 
                                 className="cta-primary inline-flex items-center gap-2 group"
@@ -89,7 +89,7 @@ const home = () => {
                         </div>
 
                         {/* Stats */}
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto">
                             {stats.map((stat, index) => (
                                 <div key={index} className="text-center group">
                                     <div className={`text-3xl md:text-4xl font-bold ${stat.color} mb-2 group-hover:scale-110 transition-transform duration-300`}>
@@ -113,14 +113,14 @@ const home = () => {
             </section>
 
             {/* Quick Navigation */}
-            <section className="py-16 bg-gradient-to-br from-MidNightBlack/50 to-EveningBlack/50">
-                <div className="container mx-auto px-4 sm:px-8">
-                    <div className="text-center mb-12">
+            <section className="py-10 md:py-16 bg-gradient-to-br from-MidNightBlack/50 to-EveningBlack/50">
+                <div className="container mx-auto px-4 sm:px-6">
+                    <div className="text-center mb-8 md:mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-Snow mb-4 font-circular-bold">Explore My World</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-Green to-ElectricBlue rounded-full mx-auto"></div>
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                         {quickLinks.map((link, index) => (
                             <Link
                                 key={index} 
@@ -143,9 +143,9 @@ const home = () => {
             </section>
 
             {/* Expertise Section */}
-            <section id="expertise" className="py-16">
-                <div className="container mx-auto px-4 sm:px-8">
-                    <div className="text-center mb-12">
+            <section id="expertise" className="py-10 md:py-16">
+                <div className="container mx-auto px-4 sm:px-6">
+                    <div className="text-center mb-8 md:mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-Snow mb-4 font-circular-bold">My Expertise</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-NeonPurple to-Green rounded-full mx-auto"></div>
                         <p className="text-LightGray text-lg mt-4 max-w-2xl mx-auto">
@@ -157,8 +157,8 @@ const home = () => {
             </section>
 
             {/* Call to Action */}
-            <section className="py-16 bg-gradient-to-br from-Green/5 via-ElectricBlue/5 to-NeonPurple/5">
-                <div className="container mx-auto px-4 sm:px-8 text-center">
+            <section className="py-10 md:py-16 bg-gradient-to-br from-Green/5 via-ElectricBlue/5 to-NeonPurple/5">
+                <div className="container mx-auto px-4 sm:px-6 text-center">
                     <div className="card_stylings p-8 md:p-12 max-w-4xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-bold text-Snow mb-6 font-circular-bold">
                             Ready to Start Your Next Project?
@@ -166,7 +166,7 @@ const home = () => {
                         <p className="text-LightGray text-lg mb-8 max-w-2xl mx-auto">
                             Let's collaborate and create something amazing together. I'm here to help you achieve your goals.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
                             <a href="/contact" className="cta-primary inline-flex items-center gap-2 group">
                                 <span>Start a Project</span>
                                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">

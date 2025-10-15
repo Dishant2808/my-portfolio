@@ -13,9 +13,9 @@ export default function Education() {
 
     return (
         <BannerLayout>
-            <div className="px-4 sm:px-8 pt-10 pb-6">
+            <div className="px-2 sm:px-6 pt-6 pb-6">
                 {/* Hero Section */}
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden mb-8 md:mb-12">
                     <div className="absolute inset-0 bg-gradient-to-br from-NeonPurple/5 via-Green/5 to-ElectricBlue/5 rounded-3xl"></div>
                     <div className="relative card_stylings p-8 md:p-12 mb-12">
                         <div className="flex items-center gap-4 mb-6">
@@ -37,7 +37,7 @@ export default function Education() {
                         </p>
                         
                         {/* Stats */}
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mt-6 md:mt-8">
                             <div className="stat group hover:shadow-lg transition-all duration-300">
                                 <div className="text-2xl font-bold text-NeonPurple mb-1">{data && data[0]?.eduCards?.length || 0}</div>
                                 <div className="text-SilverGray text-sm font-medium">Institutions</div>
@@ -59,7 +59,7 @@ export default function Education() {
                 </div>
 
                 {/* Education Timeline */}
-                <div className="relative">
+                <div className="relative mt-4 md:mt-6">
                     {/* Timeline Line */}
                     <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-NeonPurple via-Green to-ElectricBlue hidden md:block"></div>
                     
@@ -88,7 +88,7 @@ export default function Education() {
                 </div>
 
                 {/* Call to Action */}
-                <div className="mt-16 text-center">
+                <div className="mt-10 md:mt-16 text-center">
                     <div className="card_stylings p-8 md:p-12">
                         <h3 className="text-Snow text-xl md:text-2xl font-bold mb-4">Ready to Learn More?</h3>
                         <p className="text-LightGray text-sm md:text-base mb-6 max-w-2xl mx-auto">

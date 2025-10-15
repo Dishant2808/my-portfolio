@@ -1,15 +1,12 @@
-import { ImCross } from 'react-icons/im'
 import { FaHandshake } from 'react-icons/fa'
 import { MdWork } from 'react-icons/md'
 import { ImHome } from 'react-icons/im'
 import { HiIdentification } from 'react-icons/hi'
-import NavItem from './NavItem'
-import DrawerLayout from '../DrawerLayout'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 
-const Nav = ({ setIsOpen, isOpen }) => {
+const Nav = () => {
     const router = useRouter();
 
     const linkBase = "px-3 py-1.5 text-xs tracking-widest uppercase transition rounded-md";
@@ -21,30 +18,43 @@ const Nav = ({ setIsOpen, isOpen }) => {
             <div className="hidden lg:block fixed top-0 left-0 right-0 z-50">
                 <nav className="h-14 bg-DeepNightBlack border-b border-DarkGray flex items-center justify-center gap-4">
                     <Link href="/" className={`${linkBase} ${getActive('/')}`}>Home</Link>
-                    <Link href="/about" className={`${linkBase} ${getActive('/about')}`}>About Me</Link>
+                    <Link href="/about" className={`${linkBase} ${getActive('/about')}`}>About</Link>
                     <Link href="/education" className={`${linkBase} ${getActive('/education')}`}>Education</Link>
                     <Link href="/experience" className={`${linkBase} ${getActive('/experience')}`}>Experience</Link>
-                    <Link href="/projects" className={`${linkBase} ${getActive('/projects')}`}>Project</Link>
+                    <Link href="/projects" className={`${linkBase} ${getActive('/projects')}`}>Projects</Link>
                     <Link href="/contact" className={`${linkBase} ${getActive('/contact')}`}>Contact</Link>
                 </nav>
             </div>
 
-            {/* Mobile drawer menu */}
-            <DrawerLayout setIsOpen={setIsOpen} isOpen={isOpen}>
-                <div className="absolute z-50 flex flex-col justify-center lg:inset-y-0  -right-0 lg:right-0 w-64 h-screen lg:mt-3 lg:mr-3 lg:h-[96%] bg-DeepNightBlack shadow-2xl md:rounded-xl md:overflow-hidden">
-                    <div onClick={e => setIsOpen(false)} className="flex text-LightGray absolute top-0 w-full items-center justify-start pl-6 text-sm h-10 bg-EveningBlack">
-                        <ImCross />
-                    </div>
-                    <div className="flex flex-col gap-y-2 px-6 w-full transition">
-                        <NavItem setIsOpen={setIsOpen} NavRoute={'/'} NavIcon={<ImHome />} NavText={'Home'} />
-                        <NavItem setIsOpen={setIsOpen} NavRoute={'/contact'} NavIcon={<FaHandshake />} NavText={'Contact'} />
-                        <NavItem setIsOpen={setIsOpen} NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
-                        <NavItem setIsOpen={setIsOpen} NavRoute={'/education'} NavIcon={<HiIdentification />} NavText={'Education'} />
-                        <NavItem setIsOpen={setIsOpen} NavRoute={'/experience'} NavIcon={<MdWork />} NavText={'Experience'} />
-                        <NavItem setIsOpen={setIsOpen} NavRoute={'/projects'} NavIcon={<MdWork />} NavText={'Projects'} />
-                    </div>
-                </div>
-            </DrawerLayout>
+            {/* Bottom navbar (mobile) */}
+            <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50">
+                <nav className="h-14 bg-DeepNightBlack border-t border-DarkGray flex items-center justify-between px-4">
+                    <Link href="/" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/')}`}>
+                        <span className="text-base"><ImHome /></span>
+                        <span>Home</span>
+                    </Link>
+                    <Link href="/about" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/about')}`}>
+                        <span className="text-base"><HiIdentification /></span>
+                        <span>About</span>
+                    </Link>
+                    <Link href="/education" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/education')}`}>
+                        <span className="text-base"><HiIdentification /></span>
+                        <span>Education</span>
+                    </Link>
+                    <Link href="/experience" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/experience')}`}>
+                        <span className="text-base"><MdWork /></span>
+                        <span>Experience</span>
+                    </Link>
+                    <Link href="/projects" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/projects')}`}>
+                        <span className="text-base"><MdWork /></span>
+                        <span>Projects</span>
+                    </Link>
+                    <Link href="/contact" className={`flex flex-col items-center justify-center text-[10px] ${getActive('/contact')}`}>
+                        <span className="text-base"><FaHandshake /></span>
+                        <span>Contact</span>
+                    </Link>
+                </nav>
+            </div>
         </>
 
     )

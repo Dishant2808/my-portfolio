@@ -21,9 +21,9 @@ export default function About() {
 
     return (
         <BannerLayout>
-            <div className="px-4 sm:px-8 pt-10 pb-10">
+            <div className="px-2 sm:px-6 pt-6 pb-6 lg:pb-10">
                 {/* Hero Section */}
-                <div className="relative overflow-hidden mb-12">
+                <div className="relative overflow-hidden mb-8 md:mb-12">
                     <div className="absolute inset-0 bg-gradient-to-br from-Green/5 via-ElectricBlue/5 to-NeonPurple/5 rounded-3xl"></div>
                     <div className="relative card_stylings p-8 md:p-12">
                         <div className="flex flex-col lg:flex-row items-center gap-8">
@@ -85,7 +85,7 @@ export default function About() {
                                     <div className="text-SilverGray text-sm font-medium">Projects Delivered</div>
                                 </div>
                                 <div className="stat group hover:shadow-lg transition-all duration-300">
-                                    <div className="text-3xl font-bold text-NeonPurple mb-1">10+</div>
+                                    <div className="text-3xl font-bold text-NeonPurple mb-1">5+</div>
                                     <div className="text-SilverGray text-sm font-medium">Technologies</div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ export default function About() {
                 </div>
 
                 {/* Skills Section */}
-                <div className="mb-12">
+                <div className="mb-8 md:mb-12">
                     <div className="text-center mb-8">
                         <h2 className="text-Snow text-3xl md:text-4xl font-bold font-circular-bold mb-4">Technical Expertise</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-Green to-ElectricBlue rounded-full mx-auto"></div>
@@ -119,7 +119,7 @@ export default function About() {
                 </div>
 
                 {/* Tech Stack */}
-                <div className="mb-12">
+                <div className="mb-8 md:mb-12">
                     <div className="text-center mb-8">
                         <h2 className="text-Snow text-3xl md:text-4xl font-bold font-circular-bold mb-4">Tech Stack</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-NeonPurple to-Green rounded-full mx-auto"></div>
@@ -145,7 +145,7 @@ export default function About() {
                 </div>
 
                 {/* About Content */}
-                <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
                     <div className="card_stylings p-8 group hover:shadow-lg transition-all duration-300">
                         <div className="flex items-center gap-3 mb-6">
                             <div className="w-10 h-10 bg-gradient-to-br from-Green to-ElectricBlue rounded-lg flex items-center justify-center">
@@ -180,7 +180,7 @@ export default function About() {
                 </div>
 
                 {/* Call to Action */}
-                <div className="text-center">
+                <div className="text-center mt-6 md:mt-10">
                     <div className="card_stylings p-8 md:p-12">
                         <h3 className="text-Snow text-2xl md:text-3xl font-bold mb-4">Let's Build Something Amazing Together</h3>
                         <p className="text-LightGray text-base md:text-lg mb-8 max-w-2xl mx-auto">

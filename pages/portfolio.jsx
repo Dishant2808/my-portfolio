@@ -14,7 +14,7 @@ const Projects = () => {
             .then(({ data }) => data)
             .catch(error => console.error('Error fetching testimonials:', error)))
     const counts = useMemo(() => {
-        const result = { laravel: 10, reactNext: 3, node: 2 };
+        const result = { laravel: 15, reactNext: 3, node: 2 };
         if (!Array.isArray(data)) return result;
         data.forEach((p) => {
             const techs = (p?.technologiesUsed || []).map(t => (t?.tech || '')).join(' ').toLowerCase();
