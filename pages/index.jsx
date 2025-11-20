@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const home = () => {
     const stats = [
-        { number: "4", label: "Years Experience", color: "text-Green" },
+        { number: "3+", label: "Years Experience", color: "text-Green" },
         { number: "20+", label: "Projects Delivered", color: "text-ElectricBlue" },
         { number: "5+", label: "Technologies", color: "text-NeonPurple" },
         { number: "100%", label: "Client Satisfaction", color: "text-Green" }

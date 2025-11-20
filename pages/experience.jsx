@@ -40,7 +40,7 @@ export default function Experience() {
                                 <div className="text-SilverGray text-sm font-medium">Companies</div>
                             </div>
                             <div className="stat group hover:shadow-lg transition-all duration-300">
-                                <div className="text-2xl font-bold text-ElectricBlue mb-1">4</div>
+                                <div className="text-2xl font-bold text-ElectricBlue mb-1">3+</div>
                                 <div className="text-SilverGray text-sm font-medium">Years Experience</div>
                             </div>
                             <div className="stat group hover:shadow-lg transition-all duration-300">
