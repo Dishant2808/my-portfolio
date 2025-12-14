@@ -17,7 +17,7 @@ const Contact = () => {
         {
             icon: HiMail,
             title: "Email",
-            details: ["dishantthakur8282@gmail.com"],
+            details: ["dishantthakur8282@gmail.com", "dishantthakur7016@gmail.com"],
             color: "from-ElectricBlue to-NeonPurple",
             bgColor: "bg-ElectricBlue/10",
             borderColor: "border-ElectricBlue/30"
@@ -110,6 +110,10 @@ const Contact = () => {
                                 <p className="text-SilverGray leading-relaxed mb-4">
                                     Prefer email? Send me a detailed message about your project and I'll get back to you soon.
                                 </p>
+                                <a href="mailto:dishantthakur7016@gmail.com" className="flex items-center gap-2 text-ElectricBlue hover:text-ElectricBlue/80 transition-colors">
+                                    <HiMail className="w-4 h-4" />
+                                    <span>dishantthakur7016@gmail.com</span>
+                                </a>
                                 <a href="mailto:dishantthakur8282@gmail.com" className="flex items-center gap-2 text-ElectricBlue hover:text-ElectricBlue/80 transition-colors">
                                     <HiMail className="w-4 h-4" />
                                     <span>dishantthakur8282@gmail.com</span>

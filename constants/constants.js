@@ -46,7 +46,7 @@ export const TECH_STACK = [
 ];
 
 export const CONTACTS = {
-  EMAIL: 'dishantthakur8282@gmail.com',
+  EMAIL: 'dishantthakur7016@gmail.com | dishantthakur8282@gmail.com',
   PHONE: '+91 86289 24100 | +91 85447 31330',
 };
 export const SOCIAL_LINKS = {
