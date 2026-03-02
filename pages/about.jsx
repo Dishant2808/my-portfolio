@@ -1,6 +1,6 @@
 import Link from "next/link";
 import BannerLayout from "../components/Common/BannerLayout";
-import Footer from "../components/Footer";
+import PageHero from "../components/Common/PageHero";
 
 export default function About() {
     const skills = [
@@ -19,75 +19,53 @@ export default function About() {
         { name: "Tools", techs: ["Git", "Docker", "AWS", "Vercel"], icon: "🛠️" }
     ];
 
+    const heroStats = [
+        { value: '4+', label: 'Years Experience', colorClass: 'text-Green' },
+        { value: '20+', label: 'Projects Delivered', colorClass: 'text-ElectricBlue' },
+        { value: '5+', label: 'Technologies', colorClass: 'text-NeonPurple' },
+    ];
+
     return (
         <BannerLayout>
-            <div className="px-2 sm:px-6 pt-6 pb-6 lg:pb-10">
-                {/* Hero Section */}
-                <div className="relative overflow-hidden mb-8 md:mb-12">
-                    <div className="absolute inset-0 bg-gradient-to-br from-Green/5 via-ElectricBlue/5 to-NeonPurple/5 rounded-3xl"></div>
-                    <div className="relative card_stylings p-8 md:p-12">
-                        <div className="flex flex-col lg:flex-row items-center gap-8">
-                            {/* Profile Image */}
-                            <div className="relative group">
-                                <div className="absolute inset-0 bg-gradient-to-br from-Green via-ElectricBlue to-NeonPurple rounded-3xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-                                <div className="relative w-40 h-40 rounded-3xl overflow-hidden border-4 border-white shadow-2xl">
-                                    <img src="/images/profile.jpg" alt="Dishant Thakur" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                                </div>
-                                <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-gradient-to-br from-Green to-ElectricBlue rounded-full flex items-center justify-center shadow-lg">
-                                    <span className="text-white text-xl">👨‍💻</span>
+            <div className="px-4 sm:px-6 pt-6 pb-6 lg:pb-10">
+                <PageHero
+                    title="About Me"
+                    description="I craft exceptional digital experiences through clean, performant web applications. With a passion for developer experience and user-centric design, I transform ideas into scalable, maintainable solutions."
+                    icon={
+                        <svg className="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    }
+                    stats={heroStats}
+                />
+
+                {/* Profile + CTAs */}
+                <div className="card_stylings p-6 md:p-8 mb-8 md:mb-12 rounded-2xl">
+                    <div className="flex flex-col sm:flex-row items-center gap-6">
+                        <div className="relative group flex-shrink-0">
+                            <div className="absolute -inset-1 bg-Green/20 rounded-2xl blur group-hover:bg-Green/30 transition-colors" />
+                            <div className="relative w-32 h-32 rounded-2xl overflow-hidden border-2 border-DarkGray">
+                                <img src="/images/profile.jpg" alt="Dishant Thakur" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                        </div>
+                        <div className="flex-1 text-center sm:text-left">
+                            <div className="flex items-center justify-center sm:justify-start gap-2 mb-2">
+                                <span className="pill">Team Leader</span>
+                                <div className="flex items-center gap-1">
+                                    <div className="w-2 h-2 bg-Green rounded-full animate-pulse" />
+                                    <span className="text-xs text-LightGray">Available</span>
                                 </div>
                             </div>
-
-                            {/* Profile Info */}
-                            <div className="flex-1 text-center lg:text-left">
-                                <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-                                    <span className="pill">Full‑Stack Developer</span>
-                                    <div className="flex items-center gap-1">
-                                        <div className="w-2 h-2 bg-Green rounded-full animate-pulse"></div>
-                                        <span className="text-xs text-LightGray">Available for work</span>
-                                    </div>
-                                </div>
-                                
-                                <h1 className="text-Snow text-4xl md:text-5xl font-bold font-circular-bold mb-4">
-                                    Dishant Thakur
-                                </h1>
-                                
-                                <p className="text-LightGray text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-6 font-circular-normal">
-                                    I craft exceptional digital experiences through clean, performant web applications. 
-                                    With a passion for developer experience and user-centric design, I transform ideas into 
-                                    scalable, maintainable solutions.
-                                </p>
-
-                                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                    <Link href="/projects" className="cta-primary inline-flex items-center gap-2 group">
-                                        <span>View My Work</span>
-                                        <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                        </svg>
-                                    </Link>
-                                    <Link href="/resume.pdf" target="_blank" rel="noreferrer" className="cta-secondary inline-flex items-center gap-2 group">
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                        </svg>
-                                        <span>Download CV</span>
-                                    </Link>
-                                </div>
-                            </div>
-
-                            {/* Stats */}
-                            <div className="grid grid-cols-1 gap-4 w-full lg:w-auto">
-                                <div className="stat group hover:shadow-lg transition-all duration-300">
-                                    <div className="text-3xl font-bold text-Green mb-1">3+</div>
-                                    <div className="text-SilverGray text-sm font-medium">Years Experience</div>
-                                </div>
-                                <div className="stat group hover:shadow-lg transition-all duration-300">
-                                    <div className="text-3xl font-bold text-ElectricBlue mb-1">20+</div>
-                                    <div className="text-SilverGray text-sm font-medium">Projects Delivered</div>
-                                </div>
-                                <div className="stat group hover:shadow-lg transition-all duration-300">
-                                    <div className="text-3xl font-bold text-NeonPurple mb-1">5+</div>
-                                    <div className="text-SilverGray text-sm font-medium">Technologies</div>
-                                </div>
+                            <h2 className="text-Snow text-2xl md:text-3xl font-bold font-circular-bold mb-2">Dishant Thakur</h2>
+                            <div className="flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
+                                <Link href="/projects" className="cta-primary inline-flex items-center justify-center gap-2 group">
+                                    <span>View My Work</span>
+                                    <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                                </Link>
+                                <Link href="/resume.pdf" target="_blank" rel="noreferrer" className="cta-secondary inline-flex items-center justify-center gap-2">
+                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                                    <span>Download CV</span>
+                                </Link>
                             </div>
                         </div>
                     </div>

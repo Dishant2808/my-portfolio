@@ -37,19 +37,28 @@ const background = [
             {
                 id: 1,
                 title: 'Hash Software',
-                role: 'Full-Stack Developer',
+                role: 'Team Leader',
                 url: 'https://www.hashsoftware.com/',
-                desc: 'As a Full-Stack Developer, I build robust and scalable web applications using PHP, Laravel, WordPress, and Node.js on the backend, and React and Next.js on the frontend. I focus on creating efficient, maintainable, and high-performance solutions.',
-                year: '20/03/2023 - Present',
+                desc: 'Leading the development team, guiding technical decisions, and ensuring delivery of high-quality web solutions. I mentor developers, coordinate projects, and drive best practices across the stack while continuing to contribute to architecture and key features.',
+                year: 'Feb 2026 - Present',
                 location: 'Mohali'
-            },                       
+            },
             {
                 id: 2,
+                title: 'Hash Software',
+                role: 'Full-Stack Developer',
+                url: 'https://www.hashsoftware.com/',
+                desc: 'Built robust and scalable web applications using PHP, Laravel, WordPress, and Node.js on the backend, and React and Next.js on the frontend. Focused on creating efficient, maintainable, and high-performance solutions.',
+                year: 'March 2023 - Feb 2026',
+                location: 'Mohali'
+            },
+            {
+                id: 3,
                 title: 'Solitaire Infosystems Pvt. Ltd.',
                 role: 'PHP Developer',
                 url: 'https://solitaireinfosystems.com/',
                 desc: "As a PHP developer, I gained hands-on experience in building web applications, performing CRUD operations, and integrating Firebase services.",
-                year: '04/04/2022 - 28/02/2023',
+                year: 'Apr 2022 - Feb 2023',
                 location: 'Mohali'
             }
         ]
